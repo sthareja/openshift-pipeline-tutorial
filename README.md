@@ -291,14 +291,14 @@ Frontend:
   4. The new backend application image is deployed on OpenShift using the `apply-manifests` and `update-deployment` tasks.
 
 
-You might have noticed that there are no references to the git
+**You might have noticed that there are no references to the git
 repository or the image registry it will be pushed to in pipeline. That's because pipeline in Tekton
 are designed to be generic and re-usable across environments and stages through
 the application's lifecycle. Pipelines abstract away the specifics of the git
 source repository and image to be produced as `PipelineResources`. When triggering a
 pipeline, you can provide different git repositories and image registries to be
 used during pipeline execution. Be patient! You will do that in a little bit in
-the next section.
+the next section.**
 
 The execution order of task is determined by dependencies that are defined between the tasks via inputs and outputs as well as explicit orders that are defined via `runAfter`.
 
