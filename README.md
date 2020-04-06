@@ -109,7 +109,7 @@ $ oc get serviceaccount pipeline
 
 You will use the simple application during this tutorial, which has a [frontend](https://github.com/openshift-pipelines/vote-ui) and [backend](https://github.com/openshift-pipelines/vote-api)
 
-You can also deploy the same applications by applying the artifacts available in k8s directory of the respective repo
+**!!!!!You can also deploy the same applications by applying the artifacts available in k8s directory of the respective repo!!!!!**
 
 If you deploy the application directly, you should be able to see the deployment in the OpenShift Web Console by switching over to the **Developer** perspective of the OpenShift Web Console. Change from **Administrator** to **Developer** from the drop down as shown below:
 
