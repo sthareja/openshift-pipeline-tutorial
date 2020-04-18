@@ -344,7 +344,7 @@ spec:
   type: git
   params:
   - name: url
-    value: http://github.com/openshift-pipelines/vote-ui.git
+    value: https://github.com/KocSistem/vote-ui.git
 ```
 
 And the following defines the OpenShift internal image registry for the frontend image to be pushed to:
@@ -372,7 +372,7 @@ spec:
   type: git
   params:
   - name: url
-    value: http://github.com/openshift-pipelines/vote-api.git
+    value: https://github.com/KocSistem/vote-api.git
 ```
 
 And the following defines the OpenShift internal image registry for the backend image to be pushed to:
