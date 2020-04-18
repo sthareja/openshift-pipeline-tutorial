@@ -646,7 +646,7 @@ $ oc expose svc el-vote-app
 
 ## Configuring GitHub WebHooks
 
-Now we need to configure webhook-url on [backend](https://github.com/openshift-pipelines/vote-api) and [frontend](https://github.com/openshift-pipelines/vote-ui) source code repositories with the Route we exposed in the previously.
+Now we need to configure webhook-url on [backend](http://github.com/openshift-pipelines/vote-api) and [frontend](http://github.com/openshift-pipelines/vote-ui) source code repositories with the Route we exposed in the previously.
 
 * Run below command to get webhook-url
 ```bash
@@ -655,7 +655,7 @@ $ echo "URL: $(oc  get route el-vote-app --template='http://{{.spec.host}}')"
 
 >***Note:***
 >
->Fork the [backend](https://github.com/openshift-pipelines/vote-api) and [frontend](https://github.com/openshift-pipelines/vote-ui) source code repositories so that you have sufficient privileges to configure GitHub webhooks.
+>Fork the [backend](http://github.com/openshift-pipelines/vote-api) and [frontend](http://github.com/openshift-pipelines/vote-ui) source code repositories so that you have sufficient privileges to configure GitHub webhooks.
 
 ### Configure webhook manually
 
