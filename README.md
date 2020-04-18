@@ -646,29 +646,29 @@ $ oc expose svc el-vote-app
 
 ## Configuring GitHub WebHooks
 
-Now we need to configure webhook-url on [backend](http://github.com/openshift-pipelines/vote-api) and [frontend](http://github.com/openshift-pipelines/vote-ui) source code repositories with the Route we exposed in the previously.
+Now we need to configure webhook-url on [backend](https://github.com/KocSistem/vote-api) and [frontend](https://github.com/KocSistem/vote-ui) source code repositories with the Route we exposed in the previously.
 
 * Run below command to get webhook-url
 ```bash
-$ echo "URL: $(oc  get route el-vote-app --template='http://{{.spec.host}}')"
+$ oc get route el-vote-app --template='http://{{.spec.host}}'
 ```
 
 >***Note:***
 >
->Fork the [backend](http://github.com/openshift-pipelines/vote-api) and [frontend](http://github.com/openshift-pipelines/vote-ui) source code repositories so that you have sufficient privileges to configure GitHub webhooks.
+>Fork the [backend](https://github.com/KocSistem/vote-api) and [frontend](https://github.com/KocSistem/vote-ui) source code repositories so that you have sufficient privileges to configure GitHub webhooks.
 
 ### Configure webhook manually
 
 Open forked github repo (Go to Settings > Webhook)
 click on `Add Webhook` > Add
 ```bash
-$ echo "$(oc  get route el-vote-app --template='http://{{.spec.host}}')"
+$ oc get route el-vote-app --template='http://{{.spec.host}}'
 ```
 to payload URL > Select Content type as `application/json` > Add secret eg: `1234567` > Click on `Add Webhook`
 
 ![Add webhook](docs/images/add-webhook.png)
 
-- Follow above procedure to configure webhook on [frontend](https://github.com/openshift-pipelines/vote-ui) repo
+- Follow above procedure to configure webhook on [frontend](https://github.com/KocSistem/vote-ui) repo
 
 Now we should see a webhook configured on your forked source code repositories (on our
 GitHub Repo, go to Settings>Webhooks).
@@ -679,7 +679,7 @@ GitHub Repo, go to Settings>Webhooks).
 
 #### Trigger pipeline Run
 
-When we perform any push event on the [backend](https://github.com/openshift-pipelines/vote-api) the following should happen.
+When we perform any push event on the [backend](https://github.com/KocSistem/vote-api) the following should happen.
 
 1.  The configured webhook in vote-api GitHub repository should push the event payload to our route (exposed EventListener Service).
 
