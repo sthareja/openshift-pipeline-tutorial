@@ -408,8 +408,8 @@ You can see the list of resources created using `tkn`:
 $ tkn resource ls
 
 NAME        TYPE    DETAILS
-api-repo    git     url: http://github.com/openshift-pipelines/vote-api.git
-ui-repo     git     url: http://github.com/openshift-pipelines/vote-ui.git
+api-repo    git     url: https://github.com/KocSistem/vote-api.git
+ui-repo     git     url: https://github.com/KocSistem/vote-ui.git
 api-image   image   url: image-registry.openshift-image-registry.svc:5000/pipelines-tutorial/vote-api:latest
 ui-image    image   url: image-registry.openshift-image-registry.svc:5000/pipelines-tutorial/vote-ui:latest
 ```
