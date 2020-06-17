@@ -586,7 +586,7 @@ TriggerBindings is a map enable you to capture fields from an event and store th
 The definition of our TriggerBinding is given in `03-triggers/01_binding.yaml`.
 
 ```yaml
-apiVersion: tekton.dev/v1alpha1
+apiVersion: triggers.tekton.dev/v1alpha1
 kind: TriggerBinding
 metadata:
   name: vote-app
@@ -618,7 +618,7 @@ The definition for our EventListener can be found in
 `03-triggers/03_event_listener.yaml`.
 
 ```yaml
-apiVersion: tekton.dev/v1alpha1
+apiVersion: triggers.tekton.dev/v1alpha1
 kind: EventListener
 metadata:
   name: vote-app
