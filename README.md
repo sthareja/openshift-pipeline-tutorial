@@ -516,7 +516,7 @@ A `TriggerTemplate` is a resource which have parameters that can be substituted 
 The definition of our TriggerTemplate is given in `03-triggers/02-template.yaml`.
 
 ```yaml
-apiVersion: tekton.dev/v1alpha1
+apiVersion: triggers.tekton.dev/v1alpha1
 kind: TriggerTemplate
 metadata:
   name: vote-app
