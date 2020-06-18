@@ -170,6 +170,7 @@ NAME                AGE
 apply-manifests     10 seconds ago
 update-deployment   4 seconds ago
 ```
+NOTEYou can also use 'oc get tasks' to see tasks are created.
 
 We will be using `buildah` clusterTasks, which gets installed along with Operator. Operator installs few ClusterTask which you can see.
 
